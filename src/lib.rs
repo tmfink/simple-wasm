@@ -1,3 +1,6 @@
+use double;
+use wasm_bindgen::prelude::*;
+
 mod utils;
 
 use wasm_bindgen::prelude::*;
@@ -15,5 +18,6 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, wasm-game-of-life! Stuff.");
+    let msg = format!("Hello, the answer is {}.", double::double_it(21));
+    alert(&msg);
 }
