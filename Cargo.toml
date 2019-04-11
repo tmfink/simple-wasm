@@ -1,7 +1,11 @@
 [package]
 name = "simple-wasm"
 version = "0.1.0"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+categories = ["wasm"]
 authors = ["Travis Finkenauer <tmfinken@gmail.com>"]
+repository = "https://github.com/tmfink/simple-wasm/tree/master"
 edition = "2018"
 
 [lib]
